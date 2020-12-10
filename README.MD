@@ -7,7 +7,8 @@ Proyek ini bertujuan untuk mengklasifikasikan emosi di wajah seseorang menjadi s
 ## Dependensi atau alat dan pustaka yang digunakan
 
 - [Python 3](https://www.python.org/downloads/release/python-380/), [OpenCV](https://opencv.org/), [Tensorflow](https://www.tensorflow.org/)
-- To install the required packages, run `pip install -r requirements.txt`.
+- Langkah awalan utuk menjalankan program ketikan perintah berikut di dalam terminal
+  `pip install -r requirements.txt`.
 
 ## Penggunaan Dasar
 
@@ -27,13 +28,15 @@ python main.py --mode train
 python main.py --mode display
 ```
 
-- The folder structure is of the form:  
+- Struktur Folder:  
   src:
 
   - data (folder)
   - `main.py` (file)
+  - `dataset_prepare.py` (file)
   - `haarcascade_frontalface_default.xml` (file)
   - `model.h5` (file)
+  - `requirements.txt` (file)
 
 - Penerapan ini secara default mendeteksi emosi pada semua wajah di umpan webcam. Dengan CNN 4-lapis sederhana, akurasi pengujian mencapai 63,2% dalam 50 epoch.
 
@@ -59,7 +62,7 @@ python main.py --mode display
 
 ![Output](imgs/output.png)
 
-## References
+## References Program
 
 - "Challenges in Representation Learning: A report on three machine learning contests." I Goodfellow, D Erhan, PL Carrier, A Courville, M Mirza, B
   Hamner, W Cukierski, Y Tang, DH Lee, Y Zhou, C Ramaiah, F Feng, R Li,  
